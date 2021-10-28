@@ -2,8 +2,11 @@
 
 ROOT="."
 mkdir -p $ROOT
-source /u/nlp/anaconda/main/anaconda3/etc/profile.d/conda.sh
-conda activate eix-hf
+
+###### ADD CODE TO ACTIVATE ENVIRONMENT HERE #####
+
+
+###########################
 
 CACHE=cache
 mkdir -p $CACHE
