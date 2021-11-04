@@ -17,7 +17,7 @@ The pretraining dataset is in `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10
 while in-context prompts are in `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/id_prompts_randomsample_*.json`.
 
 
-This repo contains the experiments for the paper [An Explanation of In-context Learning as Implicit Bayesian Inference]{https://arxiv.org/abs/2111.02080}. If you found this repo useful, please cite
+This repo contains the experiments for the paper [An Explanation of In-context Learning as Implicit Bayesian Inference](https://arxiv.org/abs/2111.02080). If you found this repo useful, please cite
 ```
 @article{xie2021incontext,
   author = {Sang Michael Xie and Aditi Raghunathan and Percy Liang and Tengyu Ma},
