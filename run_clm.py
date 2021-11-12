@@ -194,8 +194,7 @@ def eval_prompts(model, data_dir, tokenizer, output_dir, results_name='in_contex
     ]
     paths = list(itertools.chain.from_iterable(paths))
 
-    results_names = [[Path(results_name).stem + f'_{prompt_length}.tsv', Path(results_name).stem + f'_randomsample_{prompt_length}.tsv'] for prompt_length in [2,3,5,8,10]]
-    results_names = list(itertools.chain.from_iterable(results_names))
+    results_names = [Path(results_name).stem + f'_randomsample_{prompt_length}.tsv' for prompt_length in [2,3,5,8,10]]
 
     model = model.cuda()
     model.eval()
