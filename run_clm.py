@@ -190,11 +190,11 @@ def eval_prompts(model, data_dir, tokenizer, output_dir, results_name='in_contex
             data_dir / f'id_prompts_randomsample_{prompt_length}.json',
             data_dir / f'ood_prompts_randomsample_{prompt_length}.json'
         ]]
-        for prompt_length in [2, 3, 5, 8, 10]
+        for prompt_length in [3, 5, 8, 10]
     ]
     paths = list(itertools.chain.from_iterable(paths))
 
-    results_names = [Path(results_name).stem + f'_randomsample_{prompt_length}.tsv' for prompt_length in [2,3,5,8,10]]
+    results_names = [Path(results_name).stem + f'_randomsample_{prompt_length}.tsv' for prompt_length in [3,5,8,10]]
 
     model = model.cuda()
     model.eval()

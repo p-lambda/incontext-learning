@@ -491,7 +491,7 @@ if __name__ == "__main__":
         random.seed(seed+2)
 
         if not args.prompt_length:
-            prompt_lengths = [2, 3, 5, 8, 10]
+            prompt_lengths = [3, 5, 8, 10]
         else:
             prompt_lengths = [args.prompt_length]
 
