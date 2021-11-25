@@ -15,6 +15,7 @@ Run `scripts/runner.sh` to run all the experiments on `sbatch`.
 The default dataset has vocab size 50 and the pretraining data is generated as a mixture of 5 HMMs.
 The pretraining dataset is in `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/train.json`
 while in-context prompts are in `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/id_prompts_randomsample_*.json`.
+Note that "values" corresponds to "entities" and "slots" corresponds to "properties", using terminology from the paper (below).
 
 
 This repo contains the experiments for the paper [An Explanation of In-context Learning as Implicit Bayesian Inference](https://arxiv.org/abs/2111.02080). If you found this repo useful, please cite
