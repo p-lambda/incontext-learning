@@ -18,10 +18,10 @@ while in-context prompts are in `data/GINC_trans0.1_start10.0_nsymbols50_nvalues
 Note that "values" corresponds to "entities" and "slots" corresponds to "properties", using terminology from the paper (below).
 
 ## What does the data look like?
-An example dataset is provided in the `data` directory, where an [example pretraining dataset](https://raw.githubusercontent.com/p-lambda/incontext-learning/main/data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/train.json) and an [example set of in-context prompts](https://raw.githubusercontent.com/p-lambda/incontext-learning/main/data/GINC_trans0.1_sta[…]0_nslots10_vic0.9_nhmms10/id_prompts_randomsample_3.json) can be found.
+An example dataset is provided in the `data` directory, where an [example pretraining dataset](https://raw.githubusercontent.com/p-lambda/incontext-learning/main/data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/train.json) and an [example set of in-context prompts](https://raw.githubusercontent.com/p-lambda/incontext-learning/main/data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/id_prompts_randomsample_3.json) can be found.
 
-- Pretraining dataset file: Each line in the pretraining file contains one "document", which is a sequence sampled from a random HMM in the family.
-- In-context prompt file: In the prompt file, every input in this dataset is 2 tokens long and each output is 1 token long, such that each in-context example is length 3 (the number in the file name). Each line in the file contains an in-context prompt and its label (and other metadata). The number of prompt examples in the file starts from 0 training examples (just 1 test example) to more training examples later in the file.
+- Pretraining dataset file `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/train.json`: Each line in the pretraining file contains one "document", which is a sequence sampled from a random HMM in the family.
+- In-context prompt file `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/id_prompts_randomsample_3.json`: In the prompt file, every input in this dataset is 2 tokens long and each output is 1 token long, such that each in-context example is length 3 (the number at the end of the file name). Each line in the file contains an in-context prompt and its label (and other metadata). The number of prompt examples in the file starts from 0 training examples (just 1 test example) to more training examples later in the file.
 
 This repo contains the experiments for the paper [An Explanation of In-context Learning as Implicit Bayesian Inference](https://arxiv.org/abs/2111.02080). If you found this repo useful, please cite
 ```
