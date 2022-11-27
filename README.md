@@ -12,7 +12,7 @@ Modify `consts.sh` to change the default output locations and insert code to act
 Run `scripts/runner.sh` to run all the experiments on `sbatch`.
 
 ## Explore the data
-The default dataset has vocab size 50 and the pretraining data is generated as a mixture of 5 HMMs.
+The default dataset has vocab size 50 and the pretraining data is generated as a mixture of 5 HMMs. The provided scripts in `scripts` (mainly `generate.sh`) allows for generating more instances of the GINC dataset with different parameters. All datasets for the experiments in `scripts/runner.sh` will be automatically generated as part of the script.
 The pretraining dataset is in `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/train.json`
 while in-context prompts are in `data/GINC_trans0.1_start10.0_nsymbols50_nvalues10_nslots10_vic0.9_nhmms10/id_prompts_randomsample_*.json`.
 Note that "values" corresponds to "entities" and "slots" corresponds to "properties", using terminology from the paper (below).
