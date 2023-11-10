@@ -25,11 +25,11 @@ An example dataset is provided in the `data` directory, where an [example pretra
 
 This repo contains the experiments for the paper [An Explanation of In-context Learning as Implicit Bayesian Inference](https://arxiv.org/abs/2111.02080). If you found this repo useful, please cite
 ```
-@article{xie2021incontext,
-  author = {Sang Michael Xie and Aditi Raghunathan and Percy Liang and Tengyu Ma},
-  journal = {arXiv preprint arXiv:2111.02080},
-  title = {An Explanation of In-context Learning as Implicit Bayesian Inference},
-  year = {2021},
+@inproceedings{xie2022incontext,
+title={An Explanation of In-context Learning as Implicit Bayesian Inference},
+author={Sang Michael Xie and Aditi Raghunathan and Percy Liang and Tengyu Ma},
+booktitle={International Conference on Learning Representations},
+year={2022}
 }
 ```
 
