@@ -28,7 +28,7 @@ This repo contains the experiments for the paper [An Explanation of In-context L
 @inproceedings{xie2022incontext,
 title={An Explanation of In-context Learning as Implicit Bayesian Inference},
 author={Sang Michael Xie and Aditi Raghunathan and Percy Liang and Tengyu Ma},
-booktitle={International Conference on Learning Representations},
+booktitle={International Conference on Learning Representations (ICLR)},
 year={2022}
 }
 ```
